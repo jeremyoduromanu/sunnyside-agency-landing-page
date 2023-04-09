@@ -70,3 +70,9 @@ body{
     border-color: var(--dark-blue);
     color: var(--dark-blue);
 }
+
+  .attribution {
+      font-size: 11px;
+      text-align: center;
+  }
+
