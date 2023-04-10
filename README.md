@@ -1,4 +1,6 @@
 # Frontend Mentor - Sunnyside agency landing page
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8d04f84c-e153-4f0f-8d89-866c42f8d1f0/deploy-status)](https://app.netlify.com/sites/cool-naiad-ac1833/deploys)
+
 
 ![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)
 
