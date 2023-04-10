@@ -15,3 +15,25 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+header{
+    width: 90%;
+    margin: auto;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav{
+    display: none;
+}
+
+.dropmenu{
+    width: 90vw;
+    margin: auto;
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+}
