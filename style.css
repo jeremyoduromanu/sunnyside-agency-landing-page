@@ -27,7 +27,7 @@ body {
 
 #hero {
   height: 100vh;
-  background-image: url(./images/mobile/image-header.jpg);
+  background-image: url(./images/desktop/image-header.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -110,6 +110,7 @@ nav {
   border-radius: 30px;
   font-family: "Fraunces", sans-serif;
 }
+
 
 /* hero content start  */
 .hero_content{
@@ -407,7 +408,6 @@ since they all have similar styling to save time  */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 10px;
   width: 100%;
 }
 
@@ -475,6 +475,301 @@ footer .web-logo img{
     margin: 0 10px;
     background-color: white;
     
+}
+
+
+@media only screen and (min-width: 700px){
+    .dropmenu-toggler{
+        display: none;
+    }
+
+    header{
+        height: 80px;
+    }
+
+    nav{
+        display: block;
+    }
+
+    .navlinks{
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+
+    .navlinks li a{
+        text-decoration: none;
+        font-family: var(--font-family1);
+        color: var(--white);
+    }
+
+    .navlinks  .contact a{
+    padding: 15px 20px;
+    background-color: hsl(51, 100%, 49%);
+    color: hsl(212, 27%, 19%);
+    border-radius: 30px;
+    font-family: "Fraunces", sans-serif;
+    transition: all .5s ease;
+}
+
+.navlinks .contact:hover a{
+    background-color: rgba(255, 255, 255, 0.527);
+    color: var(--white);
+}
+
+main{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.transform_section{
+    flex-direction: row-reverse;
+}
+
+.transform_section,
+.standout_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.transform_section{
+    flex-direction: row-reverse;
+    height: 600px;
+}
+
+.transform_section .image-container {
+    width: 50%;
+    height: 100%;
+    background-image: url(./images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.transform-content {
+    width: 50%;
+    margin: auto;
+    padding: 10% 10%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.transform-content .transform-header {
+    margin-bottom: 30px;
+}
+
+.transform-header h1 {
+    text-align: left;
+    font-size: 30px;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.transform-desc {
+    margin-bottom: 30px;
+}
+
+.transform-desc p {
+    text-align: left;
+    font-size: 15px;
+    font-family: var(--font-family1);
+    line-height: 30px;
+    color: var(--dark-grayish-blue);
+}
+
+.learn-more-btn {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.learn-more-btn a {
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.learn-more-btn a::before {
+    content: '';
+    position: absolute;
+    height: 8px;
+    z-index: -1;
+    width: 110%;
+    margin: auto;
+    left: -5px;
+    bottom: 0;
+    border-radius: 20px;
+    transition: .5s ease-in;
+    background-color: hsl(51, 100%, 84%);
+}
+
+.transform-content .learn-more-btn a:hover::before {
+    background-color: hsl(51, 100%, 49%);
+}
+
+/* top section ends */
+
+/* standout section starts  */
+/* i added the classes of transform section to standout sections
+since they all have similar styling to save time  */
+.standout_section{
+    height: 600px;
+}
+.standout_section .image-container {
+    width: 50%;
+    height: 100%;
+    background-image: url(./images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.standout_section .learn-more-btn a::before {
+    content: '';
+    position: absolute;
+    height: 8px;
+    z-index: -1;
+    width: 110%;
+    margin: auto;
+    left: -5px;
+    bottom: 0;
+    border-radius: 20px;
+    background-color: hsl(7, 100%, 83%);
+    transition: all .5s ease;
+}
+
+.standout_section .learn-more-btn a:hover::before {
+    background-color: hsl(7, 99%, 70%);
+}
+
+/* standout section ends  */
+
+/* graphic design section start  */
+.graphic-design {
+    height: 600px;
+    padding-bottom: 10vh;
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.graphic-design-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.graphic-design-content .gd-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gd-header h1 {
+    font-size: 36px;
+    color: hsl(167, 40%, 24%);
+}
+
+.gd-desc {
+    text-align: center;
+    font-family: var(--font-family1);
+}
+
+.gd-desc p {
+    font-size: 18px;
+    line-height: 30px;
+    color: hsl(167, 40%, 24%);
+}
+
+.presentation-divs{
+    display: flex;
+}
+
+/* graphic design section start  */
+.graphic-design {
+    width: 50%;
+    height: 600px;
+    padding-bottom: 10vh;
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.graphic-design-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.graphic-design-content .gd-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gd-header h1 {
+    font-size: 30px;
+    color: hsl(167, 40%, 24%);
+}
+
+.gd-desc {
+    text-align: center;
+    font-family: var(--font-family1);
+}
+
+.gd-desc p {
+    font-size: 18px;
+    line-height: 30px;
+    color: hsl(167, 40%, 24%);
+}
+
+
+/* photography section starts */
+
+.photography {
+    width: 50%;
+    height: 600px;
+    padding-bottom: 50px;
+    background-image: url(./images/mobile/image-photography.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.photography-content {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.photography-content .pg-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pg-header h1 {
+    font-size: 36px;
+    color: hsl(198, 62%, 26%);
+}
+
+.pg-desc {
+    text-align: center;
+    font-family: var(--font-family1);
+}
+
+.pg-desc p {
+    font-size: 18px;
+    line-height: 30px;
+    color: hsl(198, 62%, 26%);
+}
 }
 
 
