@@ -204,7 +204,12 @@ nav {
     left: -5px;
     bottom: 0;
     border-radius: 20px;
+    transition: .5s ease-in;
     background-color: hsl(51, 100%, 84%);
+}
+
+.transform-content .learn-more-btn a:hover::before{
+    background-color: hsl(51, 100%, 49%);
 }
 
 /* top section ends */
@@ -232,6 +237,11 @@ since they all have similar styling to save time  */
     bottom: 0;
     border-radius: 20px;
     background-color: hsl(7, 100%, 83%);
+    transition: all .5s ease;
+}
+
+.standout_section .learn-more-btn a:hover::before{
+    background-color: hsl(7, 99%, 70%);
 }
 
 /* standout section ends  */
@@ -416,3 +426,55 @@ since they all have similar styling to save time  */
   width: 100%;
 }
 /* bottom section ends */
+
+/* footer section  */
+footer{
+    display: flex;
+    padding: 40px 0 0 0;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    background-color: hsl(168, 34%, 41%);
+}
+
+footer:last-child{
+    align-items: flex-end;
+}
+
+.web-logo{
+    display: flex;
+    justify-content: center;
+}
+
+footer .web-logo img{
+    width: 40%;
+    color: hsl(168, 34%, 41%);
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 50px auto;
+    width: 80%;
+}
+
+.footer-links a{
+    text-decoration: none;
+    font-size: 18px;
+    color: hsl(167, 40%, 24%);
+    font-family: var(--font-family1);
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.social-links img{
+    margin: 0 10px;
+    background-color: white;
+    
+}
+
+
